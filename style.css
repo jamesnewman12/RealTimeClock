@@ -1,0 +1,17 @@
+.text1 { 
+    
+    font-family: 'Cedarville Cursive', cursive;
+    text-align: center;
+    font-size: 90px;
+}
+
+.canvasBoy {
+    text-align: center;
+    margin: auto;
+    width: 27%;
+    padding: 10px;
+    margin-left: auto;
+  margin-right: auto;
+  
+  
+}
