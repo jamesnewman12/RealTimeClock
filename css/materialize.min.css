@@ -2355,10 +2355,10 @@ th {
 }
 .progress {
   position: relative;
-  height: 4px;
+  height: 2.5px;
   display: block;
   width: 100%;
- 
+ background-color: white;
   border-radius: 2px;
   margin: 0.5rem 0 1rem 0;
   overflow: hidden;
@@ -2486,7 +2486,7 @@ input[type="range"] + .thumb {
   user-select: none;
 }
 .circle {
-  border-radius: 50%;
+  /* border-radius: 90%; */
 }
 .center-block {
   display: block;
@@ -6785,6 +6785,11 @@ input[type="range"]::-ms-thumb {
   border-right-color: transparent !important;
   -webkit-transform: rotate(129deg);
   transform: rotate(129deg);
+  margin:auto;
+    width: 512px;
+    height: 512px;
+    background: rgba(0,0,0,.4);
+    position: relative;
 }
 .circle-clipper.right .circle {
   left: -100%;
