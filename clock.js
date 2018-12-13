@@ -1,3 +1,4 @@
+
 function renderClock(ctx){
   var now = new Date();
   ctx.save();
@@ -42,6 +43,8 @@ function renderClock(ctx){
 
   ctx.fillStyle = "green";
 
+  
+
   // write Hours
   ctx.save();
   ctx.rotate( hr*(Math.PI/6) + (Math.PI/360)*min + (Math.PI/21600)*sec )
@@ -76,3 +79,5 @@ function renderClock(ctx){
 
   ctx.restore();
 }
+
+

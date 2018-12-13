@@ -2,8 +2,12 @@
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <title>HTML Clock</title>
+  <title>Clock</title>
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
@@ -13,11 +17,25 @@
   <div class="text1"> Time is a waste of money. </div>
 
 
+    <!-- Element Showed -->
+    <a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">
+    </i></a>
+
+    <!-- Tap Target Structure -->
+    <div class="tap-target" data-target="menu">
+      <div class="tap-target-content">
+        <h5>Title</h5>
+        <p>A bunch of text</p>
+      </div>
+    </div>
+            
+
     <div class="canvasBoy">
 <canvas id="canvas" width="200" height="600"></canvas>
 <div></div>
 <script type="text/javascript" src="clock.js"></script>
 <script type="text/javascript">
+
 function render(canvas) {
     var ctx = canvas.getContext('2d');
     renderClock(ctx);
@@ -29,6 +47,7 @@ if(canvas.getContext) {
 } else {
     alert('This browser doesn\'t support the canvas element :(');
 }
+
 </script>
 </body>
 </html>
